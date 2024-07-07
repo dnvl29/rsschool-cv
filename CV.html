@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Diana Demidyk</title>
+    <style>
+        html{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+        h2{
+        background: gray;
+        }
+        ul {
+        list-style-position: inside;
+        padding-left: 0%;
+        }
+        pre{
+        text-align: left;
+        background: #CBD0CC;
+        }
+
+        .footer{
+        display: inline;
+        vertical-align: center;
+        }
+        .li{
+        display: inline;
+        list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+ <header>
+<p>rsschool-cv</p>
+<hr>
+     <nav>
+         <ul>
+             <li class="li"><a href="#contacts">Contacts</a></li>
+             <li class="li"><a href="#abautme">About Me</a></li>
+             <li class="li"><a href="#skills">Skills</a></li>
+             <li class="li"><a href="#code">Code examples</a></li>
+             <li class="li"><a href="#education">Education</a></li>
+         </ul>
+     </nav>
+ </header>
+
+ <main>
+<img src="photo.jpeg" alt="photo" width="350">
+<h1> Diana Demidyk </h1>
+<h2 id="contacts"> Contacts:</h2>
+<ul>
+    <li>Location: Brest, Belarus</li>
+    <li>Phone number: +375 29 793-37-41</li>
+    <li> Email: anaidana2307@mail.ru</li>
+    <li>GitHub: dnvl29</li>
+
+</ul>
+
+<h2 id="abautme">About Me</h2>
+<p>I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills.</p>
+     <h2 id="skills"> Skills </h2>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript (Basic)</li>
+    <li>Git</li>
+    <li>English A1</li>
+    </ul>
+<h2 id="code"> Code examples </h2>
+     <pre><code> function{color:blue} findLongestWord(text) {
+    let words = text.split(" ");
+    let word = "";
+    // for (let i = 0; i < words.length; i++) {
+    //     if (word.length < words[i].length) {
+    //         word = words[i];
+    //     }
+    // }
+    for (let item of words) {
+        if (word.length < item.length) {
+            word = item;
+        }
+    }
+    return (word);
+}
+const longestWord = findLongestWord("Lorem ipsum dolor sit
+amet, consectetur adipiscing elit. Praesent
+rutrum, quam sit amet semper tempus, velit
+nibh pellentesque dui, nec consectetur
+erat orci et libero. ");
+         console.log(longestWord);</code></pre>
+<h2 id="education">Education</h2>
+<p> Brest State University named after Pushkin, Faculty of Law </p>
+ </main>
+
+ <footer>
+     <hr>
+     <a href="https://app.rs.school" class="footer"> <img src="logo.png" alt="logo" width="70"></a>
+     <p class="footer"> GitHub: <a href="https://github.com/dnvl29">dnvl29</a></p>
+     <p class="footer">©2024</p>
+
+ </footer>
+
+</body>
+</html>
